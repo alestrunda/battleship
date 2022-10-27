@@ -1,3 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+}
+
+.board__item {
+  width: 10%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.board__item--active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.board__item--full {
+  width: 100%;
+}
+
+.board__item--empty {
+  width: 9.09090909%; /* 1/11 */
+}
+
+.board__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1
+}
+
+.board__nav--x {
+  display: flex;
+  width: 90.9090909%;  /* 9/11 */
+}
+
+.board__nav--y {
+  width: 9.09090909%; /* 1/11 */
+}
+
 .page {
   position: relative;
   display: flex;

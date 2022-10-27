@@ -1,7 +1,10 @@
+import Board from '../components/Board';
+
 const Game = () => {
   return (
     <div className="page">
-      <div>board</div>
+      <Board />
+      <Board />
     </div>
   );
 };
