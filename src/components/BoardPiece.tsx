@@ -24,9 +24,8 @@ const BoardPiece = ({ onSelected, value, x, y }: Props) => {
       onClick={handleClick}
       type="button"
     >
-      {value === Piece.UNKNOWN && '?'}
-      {value === Piece.DESTROYED && 'X'}
-      {value === Piece.MISSED && 'O'}
+      {value === Piece.UNKNOWN && <i className="fa-solid fa-question" />}
+      {value === Piece.DESTROYED && <i className="fa-solid fa-times" />}
     </button>
   );
 };

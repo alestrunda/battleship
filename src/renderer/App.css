@@ -26,6 +26,7 @@ button {
   text-align: center;
   border: 1px solid #000;
   align-items: stretch;
+  font-size: 1.5rem;
 }
 
 .board__item--destroyed {
